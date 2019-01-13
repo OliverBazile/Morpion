@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "998171407043",
+    "firebase_url": "https://tictactoe-d0a48.firebaseio.com",
+    "project_id": "tictactoe-d0a48",
+    "storage_bucket": "tictactoe-d0a48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998171407043:android:fb20d79dbf3c1715",
+        "android_client_info": {
+          "package_name": "com.example.bazile.morpion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998171407043-1av32tdelnbsbt1esaca71477sud776j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bazile.morpion",
+            "certificate_hash": "f2b024038d02c9fc0e56786b529de5b1d3ded068"
+          }
+        },
+        {
+          "client_id": "998171407043-l83mtt9sfg9q8fsngovv3tbu091kepd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP61vO-giA1TGvqOaKaYHhMquqX_fC8nc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998171407043-l83mtt9sfg9q8fsngovv3tbu091kepd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

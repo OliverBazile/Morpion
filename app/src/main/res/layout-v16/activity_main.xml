@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/main_dimens_text_view" />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp">
+
+        <TableRow
+            android:id="@+id/table_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="@dimen/main_dimens_button"
+                android:layout_height="@dimen/main_dimens_button"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textSize="@dimen/dimens_button"
+                android:textAllCaps="false"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/replay"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/main_dimens_text_view"/>
+
+
+</LinearLayout>
