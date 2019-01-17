@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -118,8 +118,8 @@
         </TableRow>
     </TableLayout>
 
-    <Button
-        android:id="@+id/replay"
+    <TextView
+        android:id="@+id/replay_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

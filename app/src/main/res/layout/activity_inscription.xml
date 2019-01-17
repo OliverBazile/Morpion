@@ -5,7 +5,7 @@
     android:background="@android:color/white">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_inscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -17,7 +17,7 @@
 
 
     <EditText
-        android:id="@+id/edit_text"
+        android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

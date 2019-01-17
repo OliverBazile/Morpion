@@ -5,13 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity() : AppCompatActivity(), View.OnClickListener {
-    internal lateinit var text: TextView
-    private lateinit var textPlay: TextView
-    private lateinit var tableLayout: TableLayout
-    private lateinit var tableRow: TableRow
 
     private var board = mutableMapOf<Int, String>()
     private var Player = true
@@ -22,17 +19,14 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        text = findViewById<View>(R.id.title) as TextView
-        textPlay = findViewById<View>(R.id.replay) as TextView
-        tableLayout = findViewById<View>(R.id.table_layout) as TableLayout
-        tableRow = findViewById<View>(R.id.table_row_one) as TableRow
 
         setFont()
         initButon()
-        textPlay.setOnClickListener {
+        replay_button.setOnClickListener {
             Toast.makeText(this, "Replay", Toast.LENGTH_LONG).show()
             newGame()
         }
+
 
     }
 
@@ -46,8 +40,8 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
 
     private fun setFont() {
         val face = Typeface.createFromAsset(assets, "fonts/fipps_regular.otf")
-        text.typeface = face
-        textPlay.typeface = face
+        title_main.typeface = face
+        replay_button.typeface = face
     }
 
     override fun onClick(view: View) {

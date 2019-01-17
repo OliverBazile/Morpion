@@ -3,22 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
-            android:text="@string/app_name"
-            android:textSize="@dimen/main_dimens_text_view" />
+    <TextView
+        android:id="@+id/title_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/main_dimens_text_view" />
 
     <TextView
         android:id="@+id/single_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="216dp"
         android:text="@string/single_player"
@@ -33,8 +33,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginBottom="247dp"
+        android:onClick="singleGames"
         android:text="@string/multi_player"
-        android:textSize="@dimen/main_dimens_text_view"
-        android:onClick="singleGames"/>
+        android:textSize="@dimen/main_dimens_text_view" />
 
 </RelativeLayout>

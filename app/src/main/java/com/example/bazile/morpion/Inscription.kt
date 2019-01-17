@@ -4,30 +4,15 @@ import android.annotation.SuppressLint
 import android.graphics.Typeface
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_inscription.*
 import java.util.regex.Pattern
 
 class Inscription : AppCompatActivity() {
 
-    private lateinit var textTitle: TextView
-    private lateinit var textGoogle: TextView
-    private lateinit var editMail: EditText
-    private lateinit var editPassword :EditText
-    private lateinit var buttonValider: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inscription)
-
-        textTitle = findViewById<View>(R.id.title) as TextView
-        editMail = findViewById<View>(R.id.edit_text) as EditText
-        editPassword = findViewById<View>(R.id.edit_text_password) as EditText
-        buttonValider = findViewById<View>(R.id.valider) as Button
-
         setFont()
         valider()
     }
@@ -35,14 +20,15 @@ class Inscription : AppCompatActivity() {
 
     private fun setFont(){
         val face = Typeface.createFromAsset(assets, "fonts/fipps_regular.otf")
-        textTitle.typeface=face
-        buttonValider.typeface= face
-        editPassword.typeface = face
-        editMail.typeface= face
+        title_inscription.typeface=face
+        valider.typeface= face
+        edit_text_email.typeface = face
+        edit_text_password.typeface=face
+
     }
 
     private fun checkMail():Boolean{
-        return !editMail.text.isEmpty() && isEmailValid(editMail.text.toString())
+        return !edit_text_email.text.isEmpty() && isEmailValid(edit_text_email.text.toString())
     }
 
     private fun isEmailValid(email: String): Boolean {
@@ -57,13 +43,13 @@ class Inscription : AppCompatActivity() {
     }
 
     private fun checkpassword():Boolean{
-        return !editPassword.text.isEmpty() && editPassword.text.length >=6
+        return !edit_text_password.text.isEmpty() && edit_text_password.text.length >=6
     }
 
     @SuppressLint("ShowToast")
     private fun valider(){
 
-        buttonValider.setOnClickListener {
+        valider.setOnClickListener {
             if (checkMail() && checkpassword())
                 Toast.makeText(this, "Le mail correct and password", Toast.LENGTH_LONG).show()
             else
