@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".game.MainActivity">
 
-    <TextView
+    <com.example.bazile.morpion.Utils.FippsTextView
         android:id="@+id/title_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:gravity="center">
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button1"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -37,7 +37,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button2"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -46,7 +46,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button3"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -63,7 +63,7 @@
             android:layout_gravity="center"
             android:gravity="center">
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button4"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -72,7 +72,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button5"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -81,7 +81,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button6"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -98,7 +98,7 @@
             android:layout_gravity="center"
             android:gravity="center">
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button7"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -107,7 +107,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button8"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -116,7 +116,7 @@
                 android:textSize="@dimen/dimens_button"
                 android:textAllCaps="false"/>
 
-            <Button
+            <com.example.bazile.morpion.Utils.FippsButton
                 android:id="@+id/button9"
                 android:layout_width="@dimen/main_dimens_button"
                 android:layout_height="@dimen/main_dimens_button"
@@ -127,7 +127,7 @@
         </TableRow>
     </TableLayout>
 
-    <TextView
+    <com.example.bazile.morpion.Utils.FippsTextView
         android:id="@+id/replay_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

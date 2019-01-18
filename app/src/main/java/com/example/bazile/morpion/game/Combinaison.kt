@@ -1,4 +1,4 @@
-package com.example.bazile.morpion
+package com.example.bazile.morpion.game
 
 val combinaison: Array<IntArray> = arrayOf(
         intArrayOf(1, 2, 3),

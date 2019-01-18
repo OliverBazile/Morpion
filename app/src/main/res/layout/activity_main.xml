@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".game.MainActivity">
 
-    <TextView
+    <com.example.bazile.morpion.Utils.FippsTextView
         android:id="@+id/title_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -118,12 +118,13 @@
         </TableRow>
     </TableLayout>
 
-    <TextView
+    <com.example.bazile.morpion.Utils.FippsTextView
         android:id="@+id/replay_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/replay"
+        android:textColor="@android:color/holo_red_light"
         android:textSize="@dimen/main_dimens_text_view" />
 
 
