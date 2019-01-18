@@ -1,10 +1,10 @@
-package com.example.bazile.morpion
+package com.example.bazile.morpion.game
 
 import android.annotation.SuppressLint
-import android.graphics.Typeface
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.example.bazile.morpion.R
 import kotlinx.android.synthetic.main.activity_inscription.*
 import java.util.regex.Pattern
 
@@ -13,18 +13,7 @@ class Inscription : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inscription)
-        setFont()
         valider()
-    }
-
-
-    private fun setFont(){
-        val face = Typeface.createFromAsset(assets, "fonts/fipps_regular.otf")
-        title_inscription.typeface=face
-        valider.typeface= face
-        edit_text_email.typeface = face
-        edit_text_password.typeface=face
-
     }
 
     private fun checkMail():Boolean{

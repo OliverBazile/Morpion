@@ -1,10 +1,10 @@
-package com.example.bazile.morpion
+package com.example.bazile.morpion.game
 
-import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.bazile.morpion.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -19,15 +19,11 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        setFont()
         initButon()
         replay_button.setOnClickListener {
             Toast.makeText(this, "Replay", Toast.LENGTH_LONG).show()
             newGame()
         }
-
-
     }
 
     private fun initButon() {
@@ -36,12 +32,6 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
             button.setOnClickListener(this)
             btn[i - 1] = button
         }
-    }
-
-    private fun setFont() {
-        val face = Typeface.createFromAsset(assets, "fonts/fipps_regular.otf")
-        title_main.typeface = face
-        replay_button.typeface = face
     }
 
     override fun onClick(view: View) {
@@ -58,9 +48,8 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
             R.id.button8 -> selected = 8
             R.id.button9 -> selected = 9
         }
-        jouer(selected,buSelected)
+        jouer(selected, buSelected)
         checkWinner()
-
     }
 
     private fun checkWinner(): Int {
@@ -107,16 +96,12 @@ class MainActivity() : AppCompatActivity(), View.OnClickListener {
             Player -> board[selected] = x
             else -> board[selected] = o
         }
-
-        val face = Typeface.createFromAsset(assets, "fonts/fipps_regular.otf")
-        buSelected.typeface = face
         buSelected.text = board[selected]
         Player = !Player
     }
 
 
     private fun dejouer(selected: Int, buSelected: Button) {
-
         if (board[selected] == x || board[selected] == o) {
             board[selected] = ""
             buSelected.text = board[selected]
